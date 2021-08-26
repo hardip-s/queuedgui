@@ -1,0 +1,19 @@
+<!-- docId: string;
+userName: string;
+received: string;
+processed: string;
+faxId: string;
+lot: string;
+loanId: string;-->
+<h1>AppXtender Queue</h1>
+<div>
+  <table border="1" width="75%">
+    <tr> <th>Sent To</th><th>Received</th><th>Processed</th><th>userName</th><th>faxId</th><th>docId</th><th>loanId</th></tr>
+    <tr align="center" *ngFor="let incompletequeue of incompletequeueData">
+       <td>{{incompletequeue.sentTo}}</td><td>{{incompletequeue.received}}</td>
+       <td>{{incompletequeue.processed}}</td><td>{{incompletequeue.userName}}</td>
+       <td>{{incompletequeue.faxId}}</td><td>{{incompletequeue.docId}}</td><td>{{incompletequeue.loanId}}</td>
+     </tr>
+  </table>
+</div>
+<router-outlet></router-outlet>
