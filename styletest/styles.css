@@ -1,0 +1,83 @@
+
+.loginBox {
+top: 216px;
+left: 575px;
+width: 500px;
+height: 400px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 3px solid #707070;
+border-radius: 3px;
+opacity: 1;
+}
+
+.loginContainer {
+    top: 0px;
+    left: 0px;
+    width: 1680px;
+    height: 1050px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+    width: 1680px;
+    height: 820px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+
+  .landing-container{
+    top: 83px;
+    left: 120px;
+    width: 1540px;
+    height: 428px;
+    opacity: 1;
+  }
+
+  .landingcard {
+    top: 83px;
+    left: 510px;
+    width: 370px;
+    height: 204px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px dashed #707070;
+    opacity: 1;
+    margin: 20px 10px;
+    display:inline-block;
+  }
+
+  .landingcard {
+    top: 83px;
+    left: 510px;
+    width: 370px;
+    height: 204px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px dashed #707070;
+    opacity: 1;
+    margin: 10px 10px;
+    display:inline-block;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+
+  section.sidebar {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+opacity: 1;
+  }
+  
+  section.main { margin-left: 100px; }
