@@ -1,27 +1,40 @@
 # MyApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
 
-## Development server
+## Install Angular Material
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+npm install --save @angular/material @angular/cdk @angular/animations
 
-## Code scaffolding
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+### This OR ....
+@NgModule({
+  ...
+  imports: [BrowserAnimationsModule],
+  ...
+})
+export class PizzaPartyAppModule { }
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### OR this ....
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+You can then include this module wherever you'd like to use the components.
 
-## Running end-to-end tests
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+@NgModule({
+  imports: [MatButtonModule, MatCheckboxModule],
+  exports: [MatButtonModule, MatCheckboxModule],
+})
+export class MyOwnCustomMaterialModule { }
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Including a theme is required
+you can add this to your styles.css:
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+### material icons
+If you want to use the mat-icon component with the official Material Design Icons, load the icon font in your index.html.
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

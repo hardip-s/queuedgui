@@ -1,0 +1,13 @@
+/* mat-card {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+} */
+
+mat-card{
+  width: fit-content;
+}
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
