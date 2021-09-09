@@ -1,2 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+* {
+    box-sizing: border-box;
+  }
+
+/* .app-container {
+    height: 800px;
+} */
+/* .app-container {
+    min-height: 320px;
+    overflow: hidden;
+} */
+
+/* html, body, .container{
+    height: 100%;
+} */
+/* .container{
+    display: table;
+    vertical-align: middle;
+}
+.vertical-center-row{
+    display: table-cell;
+    vertical-align: middle;
+} */
